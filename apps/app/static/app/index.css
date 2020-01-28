@@ -1,0 +1,10 @@
+.navbar-brand{
+    font-family: 'Monoton', cursive;
+    font-size: 45px;
+    color: #FFAD02;
+}
+
+.navbar{
+    background-color: #173F5F;
+    border-bottom: 10px red;
+}

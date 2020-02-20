@@ -1,0 +1,17 @@
+.navbar-brand{
+    font-family: 'Monoton', cursive;
+    font-size: 45px;
+    color: #FFAD02;
+}
+
+.btn-signin{
+    padding: 5px 40px;
+    font-weight: bold;
+    color: #FFAD02;
+    border-radius: 25px;
+}
+
+.btn-signin:hover{
+    background-color: #FFAD02;
+    color: #343A40;
+}

@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <script src="https://kit.fontawesome.com/d6d4fd78bb.js" crossorigin="anonymous"></script>
+
+
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
     {% load static %}
     <link rel="stylesheet" href="{% static 'app/index.css' %}"> 
@@ -15,9 +19,58 @@
     <title>Album Club</title>
 </head>
 <body>
-    <nav class="navbar">
-        <span class="navbar-brand mb-0">album club</span>
+
+    <nav class="navbar bg-dark navbar-expand-sm">
+        <span class="navbar-brand">album club</span>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#myNav">
+            <span class="fas fa-record-vinyl fa-3x"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+        <a class="btn btn-lg btn-signin px-4 ml-auto" href="/login">Sign In</a>
+        </div>
     </nav>
     
+    <div class="container-fluid">
+        <div class="row">
+            <div class="intro col-6 col-md-4">
+                <h2>THE BEST APP AND WEBSITE FOR ORGANIZING YOUR ALBUM CLUB</h2>
+                <a class="btn btn-lg px-4 btn-create" href="/create">CREATE A CLUB</a>
+            </div>
+        </div>
+    </div>
+    <div class="block-container how-it-works">
+        <h3 class="block-title">HOW IT WORKS</h3>
+        <p class="slight-text">An online platform to organize your album club</p>
+        <div class="container text-center mt-5">
+            <div class="row">
+                <div class="col-md-4 p-3">
+                    <img src="{% static "app/monitor2.png" %}" alt="Create">
+                    <p class="description">Create your album club</p>
+                </div>
+                <div class="col-md-4 p-3">
+                    <img src="{% static "app/group.png" %}" alt="Invite">
+                    <p class="description">Email the club key to your members</h4>
+                </div>
+                <div class="col-md-4 p-3">
+                    <img src="{% static "app/meet.png" %}" alt="Meet">
+                    <p class="description">Plan a listening party and get together!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer bg-dark">
+        <div>Icons made by <a href="https://www.flaticon.com/authors/prettycons" title="prettycons">prettycons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/d6d4fd78bb.js" crossorigin="anonymous"></script> -->
+
 </body>
 </html>
